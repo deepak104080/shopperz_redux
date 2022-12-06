@@ -17,28 +17,28 @@ import NotFound from './NotFound';
 import Register from './Register';
 import Login from './Login';
 
-export const GlobalContext = React.createContext();
+// export const GlobalContext = React.createContext();
 
 function App() {
 
-  const initialObj = {
-    cartTemp : [],
-    loginStatus: false,
-    userName: '',
-    userDetails: {},
-    lastPage: ''
-  }
+  // const initialObj = {
+  //   cartTemp : [],
+  //   loginStatus: false,
+  //   userName: '',
+  //   userDetails: {},
+  //   lastPage: ''
+  // }
 
-  const [store, setStore] = useState(initialObj);
+  // const [store, setStore] = useState(initialObj);
 
-  useEffect(() => {
-    console.log('Context - ', store);
-  }, [store])
+  // useEffect(() => {
+  //   console.log('Context - ', store);
+  // }, [store])
 
   return (
     <div className="">
       <BrowserRouter>
-        <GlobalContext.Provider value={{store, setStore}}>
+        {/* <GlobalContext.Provider value={{store, setStore}}> */}
         <div className='container'>
 
           <Header/>
@@ -73,7 +73,7 @@ function App() {
           <Footer/>
             
         </div>
-        </GlobalContext.Provider>
+        {/* </GlobalContext.Provider> */}
         </BrowserRouter>
     </div>
   );

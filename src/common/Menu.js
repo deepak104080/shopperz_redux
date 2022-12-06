@@ -1,18 +1,18 @@
 import React, {useContext} from 'react'
 import { Link } from 'react-router-dom';
-import { GlobalContext } from '../App';
+// import { GlobalContext } from '../App';
 
 const Menu = () => {
-  const localContext = useContext(GlobalContext);
-    const {store, setStore} = localContext;
+  // const localContext = useContext(GlobalContext);
+  // const {store, setStore} = localContext;
 
-    const logoutFn = () => {
-        setStore({
-          ...store,
-          loginStatus: false,
-          userName: ''
-      })
-    }
+    // const logoutFn = () => {
+    //     setStore({
+    //       ...store,
+    //       loginStatus: false,
+    //       userName: ''
+    //   })
+    // }
 
 
   return (
@@ -26,11 +26,11 @@ const Menu = () => {
         </div>
         <div className='col-4 bg-warning bg-opacity-50 text-end'>
             <Link className="btn btn-info" to="/register">Register</Link>
-            {
+            {/* {
                           store.loginStatus ? (<button onClick={logoutFn} className="btn btn-danger">Log Out</button>)
                            :
                           (<Link to='/login/' className="btn btn-primary">Login</Link>)
-                        }
+                        } */}
         </div>
     </div>
   )
