@@ -7,6 +7,7 @@ const Home = () => {
     const dispatch = useDispatch();
 
     const tempData = useSelector((state) => state.product.products);
+    console.log('tempData', tempData);
 
     // const [products, setProducts] = useState([]);
 
@@ -15,6 +16,7 @@ const Home = () => {
         const data = await response.json();
         console.log(data);
         // setProducts(data);
+        console.log('dispatch action - set products')
         dispatch(setProducts(data));
         //dispacth action
     }

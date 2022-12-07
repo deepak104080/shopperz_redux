@@ -53,13 +53,11 @@ function App() {
             <Route path='/register/' element={<Register/>} />
             <Route path='/login/' element={<Login/>} />
             {/* <Route path='/product' element={} />
-            <Route path='/wishlist' element={} />
-            <Route path='/cart' element={} />
+            <Route path='/wishlist' element={} /> - redux
+            <Route path='/cart' element={} /> - api
             <Route path='/checkout' element={} />
             <Route path='/order' element={} />
-            <Route path='/history' element={} />
-            <Route path='/login' element={} />
-            <Route path='/register' element={} /> */}
+            <Route path='/history' element={} /> */}
 
             <Route path='/' element={<Home />} />
             <Route path='/*' element={<NotFound />} />
