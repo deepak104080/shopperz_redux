@@ -5,6 +5,58 @@ Context - https://miro.medium.com/max/1195/0*l-RrGhD6jeQ2z9JK.png
 
 
 
+Login required
+wishlist
+cart
+order place
+last orders
+profile
+addresses
+
+
+
+
+
+onlinesbi.net/accounts/customer/balance/12345
+loginStatus - true
+11111
+
+
+
+
+onlinesbi.net/accounts/customer/balance/12346
+loginStatus - true
+
+
+
+onlinesbi.net/accounts/customer/balance/12347
+
+
+session varibales - java, php, python (session varibales) - loggedStatus
+
+
+
+---------------------------------------------
+user management - back end 1 - login, registration, profile, pictures, password, log history, adddresses, personal info, biodata, educational history, travel details
+session variable
+
+
+e-commerce/orders - cart, wishlist, orders, last orders, history of orders
+
+
+
+feedback and reviews
+
+
+
+
+JWT - json web token
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

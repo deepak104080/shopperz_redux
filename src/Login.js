@@ -38,7 +38,8 @@ const Login = () => {
             dispatch(setLogin({
                 loginStatus: true,
                 userName: username,
-                name: response.data.name
+                name: response.data.userDetails.name,
+                token: response.data.token
             }))
 
 
@@ -52,7 +53,7 @@ const Login = () => {
             // else {
             //     navigate('/home', {state : {username: username}});
             // }
-            // navigate('/home');
+            navigate('/home');
         }
         else {
             //show error

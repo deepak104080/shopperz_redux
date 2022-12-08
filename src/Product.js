@@ -1,13 +1,15 @@
 import React, {useState, useEffect, useContext} from 'react'
+import { useSelector } from 'react-redux';
 import { Link, useParams } from 'react-router-dom';
-// import { GlobalContext } from './App';
+import axios from 'axios';
 
 const Product = () => {
 
     const {id} = useParams();
     console.log(id);
 
-    // const localStore = useContext(GlobalContext);
+    const tempLoginData = useSelector(state => state.user.loginData);
+    console.log('tempLoginData', tempLoginData);
 
     const [product, setProduct] = useState({});
 
@@ -33,10 +35,14 @@ const Product = () => {
     })
 
     const fetchProduct = async() => {
-        const response = await fetch(`http://localhost:4000/products/searchbyid/${id}`)
-        const data = await response.json();
-        console.log(data);
-        setProduct(data);
+        const response = await axios.get(`http://localhost:4000/products/searchbyid/${id}`, {
+            headers: {
+                "x-access-token": tempLoginData.token
+            }
+        })
+        // const data = await response.json();
+        console.log(response.data);
+        setProduct(response.data);
     }
 
     useEffect(() => {
@@ -75,6 +81,7 @@ const Product = () => {
 
 
     return (
+        (tempLoginData.loginStatus && 
         <div className='row'>
             <div className='col-12'>
                 <div className='row my-4'>
@@ -103,6 +110,7 @@ const Product = () => {
                 </div>
             </div>
         </div>
+        )
     )
 }
 
