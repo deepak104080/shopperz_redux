@@ -51,7 +51,16 @@ feedback and reviews
 
 
 JWT - json web token
+https://jwt.io/#debugger-io
 
+Working - https://www.researchgate.net/profile/Alam-Rahmatulloh/publication/337824261/figure/fig3/AS:833708319838208@1575782961165/How-JWT-Works-f-Implementation-of-JWT-on-RESTful-As-in-the-implementation-of-JWT-on-SOAP.jpg
+
+
+Assignment - https://my.newtonschool.co/course/7aremzdapmyx/assignment/yhqvqaojparn
+
+Bcrypt - https://www.npmjs.com/package/bcrypt
+
+Refresh Token - https://auth0.com/blog/refresh-tokens-what-are-they-and-when-to-use-them/
 
 
 
